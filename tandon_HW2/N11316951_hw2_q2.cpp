@@ -1,5 +1,10 @@
 //Jovanay Carter, NetID N113169951, Bridge Winter 2023, 
-//Homework 2, Question 2
+//Homework 2, Question 2, January 20, 2023
+
+/* Prompt: The program should take in two integers from the user, representing dollars and cents, and 
+the program should print the value of the user's money in terms of quarters, dimes, nickels, and pennies.
+*/
+
 #include <iostream>
 using namespace std;
 

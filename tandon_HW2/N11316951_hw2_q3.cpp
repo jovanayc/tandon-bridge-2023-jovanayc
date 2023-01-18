@@ -1,5 +1,11 @@
 //Jovanay Carter, NetID N113169951, Bridge Winter 2023, 
 //Homework 2, Question 3, January 20, 2023
+
+/* Prompt: The program should take in two days, hours, and minutes worked for two users and 
+print the sum of the two users' days, hours, and minutes. Keep in mind that hours should 
+not surpass 24 and minutes should not surpass 60.
+*/
+
 #include <iostream>
 using namespace std;
 

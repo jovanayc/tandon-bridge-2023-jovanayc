@@ -1,6 +1,10 @@
 //Jovanay Carter, NetID N113169951, Bridge Winter 2023
 //Homework 2, Question 4, January 20, 2023
 
+/* Prompt: The program should take in two positive integers from the user and print the correct
+addition, subtraction, multiplication, division, div, and mod. Uses a double for division and an integer for div.
+*/
+
 #include <iostream>
 #include <cmath>
 using namespace std;

@@ -1,5 +1,10 @@
 //Jovanay Carter, NetID N113169951, Bridge Winter 2023, 
-//Homework 2, Question 1
+//Homework 2, Question 1, January 20, 2023
+
+/* Prompt: The program should take in four integers from the user, representing quarters, dimes, nickels,
+and pennies, and the program should print the value of the user's money in terms of dollars and cents.
+*/
+
 #include <iostream>
 using namespace std;
 
