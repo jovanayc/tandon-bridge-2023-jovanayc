@@ -1,5 +1,5 @@
 //Jovanay Carter, NetID N113169951, Bridge Winter 2023, 
-//Homework 2, Question 2
+//Homework 2, Question 1
 #include <iostream>
 using namespace std;
 
