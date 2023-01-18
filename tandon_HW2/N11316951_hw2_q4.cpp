@@ -18,7 +18,7 @@ int main(){
     add = x + y;
     subtract = x - y;
     multiply = x * y;
-    divide = (double)x / y;
+    divide = (double)x / y; //added double before x to get full value including decimals when dividing
     div = x / y;
     mod = x % y;
 
