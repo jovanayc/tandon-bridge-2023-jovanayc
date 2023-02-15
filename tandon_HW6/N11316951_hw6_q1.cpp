@@ -1,3 +1,8 @@
+// Jovanay Carter, NetID N113169951, Bridge Winter 2023,
+// Homework 6, Question 1, Feb 15, 20233
+
+/* Prompt: Create a function using fibonacci sequence */
+
 #include <iostream>
 using namespace std;
 
