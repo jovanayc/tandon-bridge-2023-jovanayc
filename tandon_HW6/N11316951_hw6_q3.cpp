@@ -4,6 +4,7 @@
 /* Prompt: Write a program with a function eApprox that returns an
     approximation of e, calculated by the sum of the first (n+1) addends of the infinite sum.
 */
+
 #include <iostream>
 using namespace std;
 
