@@ -33,6 +33,9 @@ double eApprox (int num){
     }
 
     return eOutput;
+    // Runtime is O(n) = O(n)
+    // f(n)= 3n + 5 = O(n)
+
 }
 
 //Definining factorial function
@@ -46,5 +49,3 @@ double factorial (int factNum){
     
     return factOutput;
 }
-
-//TBD: What is the run time of eApprox if it has a function called within?
