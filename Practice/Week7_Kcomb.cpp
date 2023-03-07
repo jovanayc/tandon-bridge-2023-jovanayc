@@ -1,5 +1,5 @@
 // Jovanay Carter, NetID N113169951, Bridge Winter 2023,
-// Homework 7, Question 1, Feb 19, 20233
+// Homework 7, K Combination Practice, March 7, 20233
 
 /* "Write a program that reads from the user two positive integers n, k, (assuming >=k),
 and prints the value of n choose k."
@@ -43,5 +43,5 @@ int factorial(int num){
     }
     
     return result;
-    
+
 }
