@@ -29,14 +29,16 @@ int main() {
 }
 
 int minInArray (int arr[], int arrSize){
-    //int arr[arrSize];
     int ind, min, currentNum;
-    //int appearances [];
-
-    //Look through array indecies for minimum values
-    for (ind = 0; ind < arrSize; ind++){
-        if (arr[ind] < arr[ind-1])
+    
+    //define starting minumum with first index
+    min = arr[0];
+    
+    //Look through array indecies for minimum values, starting an the 2nd element in array bc first element is initialized to min already
+    for (ind = 1; ind < arrSize; ind++){
+        if (arr[ind] < min) {
             min = arr[ind];
+        }
     }
 
     //return final Minimum
