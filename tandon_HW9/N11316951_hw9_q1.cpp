@@ -60,11 +60,13 @@ int countWords(string text){
     //Print total word count
     cout << totalWords << "\t words" << endl;
     
+    /*
     //Print character and number associated with each array index if and only if the letter is used at least 1 time
     for (int j = 0; j < 26; j++){
         if (letterCount[j] > 0)
             cout << letterCount[j] << "\t" << (char)('a'+ j) << endl;
     }
+    */
 
     return totalWords;
 }

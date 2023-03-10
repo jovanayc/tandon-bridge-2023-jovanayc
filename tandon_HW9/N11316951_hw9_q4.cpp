@@ -27,7 +27,7 @@ int main() {
     int numsArr [arrSize];
 
     //get user input for array
-    cout << "Please insert numbers for array of " << arrSize << " length. Separate numbers with 'enter'/'return'." << endl;
+    cout << "Please insert numbers for array of " << arrSize << " length. Separate numbers with a space." << endl;
     for (int i = 0; i < arrSize; i++){
         cin >> nums;
         numsArr[i] = nums;
