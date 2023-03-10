@@ -10,7 +10,6 @@ Note: Run time should be theta(n); break down your implementation to functions.
 */
 
 #include <iostream>
-#include <vector>
 #include <string>
 using namespace std;
 
@@ -45,18 +44,16 @@ int countWords(string text){
 
         //Keep track of letters used in text by ++ into the associated location in the array
         if (text[i] >= 'a' && text[i] <= 'z'){
-            cout << "Text @ i \t" << (text[i]); 
             elementLocation = text[i] - 'a'; //find location by subtraction current letter ASCII from 'a' ASCII 
             letterCount[elementLocation] ++; //add a value to the location for every time that letter comes up
-            cout << " \t Element location " << elementLocation << "\t letterCount: " << letterCount[elementLocation] << endl;
+            //cout << " \t Element location " << elementLocation << "\t letterCount: " << letterCount[elementLocation] << endl;
         }
 
         //Repeat for Uppercase casinarios
         if (text[i] >= 'A' && text[i] <= 'Z'){
-            cout << "Text @ i \t" << (text[i]); 
             elementLocation = text[i] - 'A';
             letterCount[elementLocation] ++;
-            cout << " \t Element location " << elementLocation << "\t letterCount: " << letterCount[elementLocation] << endl;
+            //cout << " \t Element location " << elementLocation << "\t letterCount: " << letterCount[elementLocation] << endl;
         }
     }
 
