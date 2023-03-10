@@ -33,17 +33,9 @@ int main() {
         numsArr[i] = nums;
     }
 
+    //call flip function
     oddsKeepEvensFlip(numsArr, arrSize);
 
-/*
-    //for expand vector size based on need
-    for (int i = 0; i < 100; i++)
-        v.push_back (i * 100);
-    
-    //ranged for loop
-    for (int i : v)
-        cout << i << endl;
-*/
     return 0;
 }
 
