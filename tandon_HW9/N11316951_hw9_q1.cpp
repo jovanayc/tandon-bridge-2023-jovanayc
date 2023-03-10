@@ -1,5 +1,5 @@
 //Jovanay Carter, N11316951, Winter Extended Bridge 2023
-//Homework 9, Question 1, March 10, 2023
+//Homework 9, Question 4, March 10, 2023
 
 /* Prompt: Write a program that will read a line of text, and
     1) outputs number of words in the line
@@ -63,7 +63,7 @@ int countWords(string text){
     //Print character and number associated with each array index if and only if the letter is used at least 1 time
     for (int j = 0; j < 26; j++){
         if (letterCount[j] > 0)
-            cout << letterCount[j] << "\t" << (char)('i'+ j) << endl;
+            cout << letterCount[j] << "\t" << (char)('a'+ j) << endl;
     }
 
     return totalWords;
