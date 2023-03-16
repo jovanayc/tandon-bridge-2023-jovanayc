@@ -76,12 +76,8 @@ bool isAnagram(string string1, string string2){
     for (int i = 0; i < 26; i++){
         if (countStr1[i] == countStr2[i]){
             equalLetters = true;
-            //cout << countStr1[i] << "\t" << (char)('a'+i);;
-            //cout << countStr2[i] << "\t" << (char)('a'+i) << endl;
         } else  {
             equalLetters = false;
-            //cout << countStr1[i];
-            //cout << countStr2[i] << endl;
             break;
         }
     }

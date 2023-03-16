@@ -41,25 +41,28 @@ int main() {
 
 void oddsKeepEvensFlip(int arr[], int arrSize){
     vector <int> rearranged, evens;
+    int countEvens = 0, countOdds = 0;
     
     for (int i = 0; i < arrSize; i++){
 
         //check if value is even at each index, put in evens vector if so
         if ((arr[i] % 2) == 0) {
             evens.push_back(arr[i]);
+            countEvens ++;
         } else {
             //check if value is odd at each index, put in rearranged vector if so
             rearranged.push_back(arr[i]);
+            countOdds ++;
         }
     }
 
     //add evens values into larger rearrange function
-    for (int i = evens.size()-1; i >= 0; i--){
+    for (int i = countEvens-1; i >= 0; i--){
         rearranged.push_back(evens[i]);
     }
 
     cout << "Rearranged array with odds first and evens in reverse order" << endl;
-    for (int i = 0; i < rearranged.size(); i++){
+    for (int i = 0; i < arrSize; i++){
         cout << rearranged[i] << ' ';
     }
 }
