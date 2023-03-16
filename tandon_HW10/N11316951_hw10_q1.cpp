@@ -13,14 +13,15 @@ using namespace std;
 string* createWordsArray(string sentence, int& outWordsArrSize);
 
 int main(){  
-  string sentence;
+  string sentence = "You can do it.";
   int outWordsArrSize = 0;
 
-  cout << "Please enter your sentence:" << endl;
-  getline (cin, sentence);
+  //For user input instead of static input choice
+    //cout << "Please enter your sentence:" << endl;
+    //getline (cin, sentence);
   
   createWordsArray (sentence, outWordsArrSize);
-  
+   
   return 0;
 }
 
@@ -30,16 +31,15 @@ string* createWordsArray(string sentence, int& outWordsArrSize){
     int previousDelimiterIndex = 0;
     string newElementWord;
 
-    string* createWordsArray;
-    createWordsArray = new string [outWordsArrSize];
+    string* wordsArray = new string [outWordsArrSize]; //initializing ptr to array of strings
     int wordsArrIndex = 0;
       
     //find space delimiter
-    for (int i = 0; i < sentence.length()-1; i++){
+    for (int i = 0; i < sentence.length(); i++){
       
-      //find instances of delimiters (space, commas, or periods)
+      //If statement find instances of delimiters (space, commas, or periods)
       if (((sentence[i] >= 'a' && sentence[i] <= 'z') || (sentence[i] >= 'A' && sentence[i] <= 'Z'))
-        && (sentence[i+1] == ' ' || sentence[i+1] == ',' || sentence[i+1] == '.')){
+        && (sentence[i+1] == ' ' || sentence[i+1] == ',' || sentence[i+1] == '.' || sentence[i] == sentence.at(sentence.length()-1))){ // checks if curr i is a letter and next i is a delimiter or last char in the sentence
        
         //set index of delimiter, resetting from 0 at the last delimiter each time by subtracting
         delimiterIndex = (i+1) - previousDelimiterIndex;
@@ -50,7 +50,7 @@ string* createWordsArray(string sentence, int& outWordsArrSize){
           //cout << newElementWord << endl; // developer check
 
         //add new substr into array of text
-        createWordsArray[wordsArrIndex] = newElementWord; //updated words array with current word
+        wordsArray[wordsArrIndex] = newElementWord; //updated words array with current word
         
         //Update values for next iteration
         wordsArrIndex ++; // increase index for words arr
@@ -62,16 +62,18 @@ string* createWordsArray(string sentence, int& outWordsArrSize){
     //print out array in individual elements
     for (int i = 0; i < outWordsArrSize; i++){
 
-      if (i != outWordsArrSize){
-        cout << "\"" << createWordsArray[i] << "\" , ";
-      } else if (i == outWordsArrSize) {
-        cout << " last \"" << createWordsArray[i] << "\"" << endl; // don't print comma on last array element
+      if (i < 1){
+        cout << "[\"" << wordsArray[i] << "\", ";
+      } else if (i > 0 && i < outWordsArrSize-1){
+        cout << "\"" << wordsArray[i] << "\", ";
+      } else if (i == outWordsArrSize-1) {
+        cout << "\"" << wordsArray[i] << "\"]" << endl; // don't print comma on last array element
       }
     }
   
-    cout << "\n Number of words in sentence / size of words in the new words array: " << outWordsArrSize << endl;
+    cout << "Size of words in the new words array: " << outWordsArrSize << endl;
 
-    return createWordsArray;
+    return wordsArray;
 
-    //delete[] outWordsArrSize;
+    delete[] wordsArray;
 }
