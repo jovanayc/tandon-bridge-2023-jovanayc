@@ -7,7 +7,6 @@ Write a test in main. */
 
 #include <iostream>
 #include <string>
-#include <vector>
 using namespace std;
 
 string* createWordsArray(string sentence, int& outWordsArrSize);
