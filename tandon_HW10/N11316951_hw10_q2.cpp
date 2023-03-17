@@ -8,7 +8,6 @@ Note: Main should test this function.
 */
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 int* findMissing (int arr[], int n, int& resArrSize);

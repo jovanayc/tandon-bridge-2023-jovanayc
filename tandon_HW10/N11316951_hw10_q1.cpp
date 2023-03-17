@@ -14,13 +14,12 @@ string* createWordsArray(string sentence, int& outWordsArrSize);
 int main(){  
   string sentence = "You can do it.";
   int outWordsArrSize = 0;
-
-  //For user input instead of static input choice
-    //cout << "Please enter your sentence:" << endl;
-    //getline (cin, sentence);
+  string* wordsArray;
   
-  createWordsArray (sentence, outWordsArrSize);
-   
+  wordsArray = createWordsArray (sentence, outWordsArrSize);
+  delete [] wordsArray;
+  wordsArray = nullptr;
+
   return 0;
 }
 
@@ -71,8 +70,9 @@ string* createWordsArray(string sentence, int& outWordsArrSize){
     }
   
     cout << "Size of words in the new words array: " << outWordsArrSize << endl;
-
+    
     return wordsArray;
 
-    delete[] wordsArray;
+    delete [] wordsArray;
+    wordsArray = nullptr;
 }
