@@ -8,10 +8,12 @@
 */
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 void triangle (int n);
 void printOppositeTriangles(int n);
+void printRuler (int n);
 
 int main() {
     int n = 4; // hard code 4 for example
@@ -23,6 +25,13 @@ int main() {
 
     cout << "b) Opposite Triangle" << endl;
     printOppositeTriangles(n);
+
+    cout << "\n// BREAK //\n" << endl;
+
+    cout << "c) Print Ruler" << endl;
+
+    printRuler(n);
+
     return 0;
 }
 
@@ -30,10 +39,10 @@ void triangle (int n){
     if (n==0){
     return;
     } else {
-    triangle (n-1);
-    for (int i = 0; i < n; i++){ // for recursive steps, print n number of stars
-    cout << '*';
-    }
+        triangle (n-1);
+        for (int i = 0; i < n; i++){ // for recursive steps, print n number of stars
+            cout << '*';
+        }
     }
     cout << endl; // go to next line at the end of each print
 }
@@ -47,10 +56,9 @@ void printOppositeTriangles(int n){
 
     } else {
         //Top half
-        for (int j = max; j > 0; j--){ // using max value so it does not affect recursion of n
+        for (int j = n; j > 0; j--){ // using max value so it does not affect recursion of n
             cout << '*';
         } 
-
         cout << endl; // go to next line at the end of each print
 
         //Bottom half
@@ -62,3 +70,23 @@ void printOppositeTriangles(int n){
 
     cout << endl; // changing lines at the end of every recursive line
 } 
+
+void printRuler (int n){
+    //base case for top & bottom
+    if (n==0){
+        return;
+
+    } else {
+        //Top half
+        printRuler (n-1);
+
+        for (int i = 0; i < n; i++){
+            cout << '-';
+        }
+
+        cout << endl; // changing lines at the end of every recursive line
+
+        printRuler (n-1);
+    
+    }
+}
