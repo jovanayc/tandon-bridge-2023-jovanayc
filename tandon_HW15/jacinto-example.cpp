@@ -14,6 +14,7 @@ public:
     }
 };
 
+
 template<class T>
 class list{
 public:
@@ -45,7 +46,7 @@ public:
     }
     void removebeginning(){
         if(this->size==0){cout<<"Cannot remove from empty list"<<endl;return;}
-        this->head=this->head->next;
+        this->head=this->head->next; // moves the header from the head to the head's next, effectively detatching the original head
         if(this->head!=nullptr){this->head->prev=nullptr;}
         this->size--;
     }
@@ -53,7 +54,7 @@ public:
         if(this->size==0){cout<<"List is empty"<<endl;return;}
         node<T>* on=this->head;
         while(on!=nullptr){
-            cout<<on->val<<" ";
+            cout<<on->val<<" "<<"\n";
             on=on->next;
         }
         cout<<endl;
@@ -69,7 +70,7 @@ int main(){
     cout<<"Linked list initialized with one element"<<endl;
     node<string>* start=new node<string>("Tandon");
     list<string>* dl=new list<string>(start);
-//    dl->print();
+    dl->print();
 //    dl->removebeginning();
 //    dl->print();
 //    dl->removeend();
@@ -93,12 +94,12 @@ int main(){
     dl->addend(five);
     dl->print();
 
-    cout<<endl<<"remove the last element"<<endl;
-    dl->removeend();
-    dl->print();
+    // cout<<endl<<"remove the last element"<<endl;
+    // dl->removeend();
+    // dl->print();
 
-    cout<<endl<<"remove the first element"<<endl;
-    dl->removebeginning();
-    dl->print();
+    // cout<<endl<<"remove the first element"<<endl;
+    // dl->removebeginning();
+    // dl->print();
     return 0;
 }
