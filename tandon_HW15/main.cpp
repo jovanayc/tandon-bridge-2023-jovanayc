@@ -13,6 +13,7 @@ public:
     Person<T> *next;
 
     Person(const T newVal, string newName) : val(newVal), name(newName){
+        T amountOwed = T (0);
         this->prev=this->next = nullptr;
         //this->amountPaid = amountPaid;
     };
@@ -24,7 +25,7 @@ class LList{
 public:
     Person<T> *head;
     Person<T> *tail;
-    T size;
+    int size;
     //initalize list constructor
     LList(Person<T>* input){
         this->head=this->tail=input;
@@ -108,9 +109,9 @@ int main(){
     //Person(const T newAmountPaid, string newName)
 
     cout<<"Linked list initialized with one element"<<endl;
-    Person<string>* start=new Person<string>("100","Tandon");
-    LList<string>* list=new LList<string>(start);
-    list->printList();
+    Person<string>* start=new Person<string>("100","Tandon"); //calling an example node
+    LList<string>* list=new LList<string>(start); //example list
+    //list->printList();
 
     return 0;
 }

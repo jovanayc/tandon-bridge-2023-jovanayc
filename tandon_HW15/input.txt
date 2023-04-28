@@ -1,3 +1,5 @@
-1 Jolene Bernegene
-2 Ethan Crunchy
-3 Alice Cheese
+78.4 Jolene Bernegene Amount Owed
+31.7 Ethan Crunchy Amount Owed
+10 Alice Cheese Amount Owed
+0.00 Jovanay D. Carter
+106 Joseph Baker
