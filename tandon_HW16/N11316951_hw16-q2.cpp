@@ -1,5 +1,5 @@
 //Jovanay Carter, Extended Winter Bridge 2023, N11316951
-//Homework 16 - May 5, 2023
+//Homework 16, Q2 - May 5, 2023
 //Queues
 
 #include <iostream>
