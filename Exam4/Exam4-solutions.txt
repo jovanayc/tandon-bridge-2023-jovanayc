@@ -1,0 +1,51 @@
+Name: __Jovanay Carter____
+ 
+Email: ____jdc9885@nyu.com_________
+
+ID: N11316951
+
+
+1) (3pts) Multiple Choice: Process
+2) (3pts) Multiple Choice: Paging
+3) (3pts) Multiple Choice: DNS
+4) (3pts) Fill in the blank: Semaphores
+5) (3pts) Fill in the blank: UDP
+
+
+6) (10 pts) Short answer: The NAT would reply with SYN ACK back to the 10.1.1.3 IP address. 
+    Then it would expect a response of "ACK" back from the 10.1.1.3 adress. Then communication can start.
+
+
+7) (15 pts) Short answer: We use muti-tasking on our computers today. Batch programming would not allow for 
+    fast processing in a situation that needs to process multiple processes at once. Instead, we rely heavily on UDP 
+    to process information to our computers quickly, even if small bits of data are lost.
+
+
+8) (10 pts) Short answer: Threads are best for several multiple functions within a process. When you have a very large data set that needs to process data quickly
+    (such as a Google data storage for instance) many computers would call on processes to run and retrieve data at once, so the resources of a single system would be 
+    too overwhelmed and things would go slowly. In this case, if you have different resources (or databases), then having multiple processes is better.
+
+9) (10 pts) Short answer: Caching is best for storing data in an intermediary-like step. It allows companies to pull less on resources that are called upon
+    multiple times. Instead of repeatedly asking the server for information, it stored information accessible to the client so that the client's requests go to the cache.
+    If the cache has the information, it can respond to the client without having to pull resources from the server and slow down the server from other processes. If the 
+    cache doesn't have the information, it will ask the server. 
+
+    This is beneficial when there is a lot of clients connected to a few servers, and the users/clients mostly utilize the same resources. This would
+    speed up the data-fetching or data-processing process.
+
+
+10) (10 pts) Short answer: I would need to make sure I understood the critical sections for each process or thread within the process as to not interrupt that section and 
+    create issues / data misinformation / or other crashes in the overall program. Once I know that information, I would put the processes on a schedule based on their priority
+    needs, for exampleby prioritizing how many other threads or processes needed that process to run to run others. The scheduler still needs to be fair and make sure that each
+    process gets a chance to run and finish.
+
+
+11) (10 pts) Short answer: This is an example of scheduling when packets have to weigh on the critical sections to be completed, and then can
+    rotate in a fair order to process. Three priorities should be the length of the distance, the size of the packet, and the order in which
+    the packet was requested. (estimation)
+
+
+12) (20 pts) Write the code:
+
+#include <iostream>
+using namespace std;
